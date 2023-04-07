@@ -1,0 +1,30 @@
+.form{
+    flex-direction: column;
+    margin-left: 35%;
+    
+}
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+  }
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+    margin-left: 2px;
+  }
+
+  /* .appButton{
+    
+  } */
+
+  button{
+    margin-left: 2px;
+  }
+  .details{
+    /* border-radius: 2px; */
+    border: 1px solid green;
+    flex-direction: column;
+    margin-left: 35%;
+    
+  }

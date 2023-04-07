@@ -1,10 +1,63 @@
-.App {
-  text-align: center;
+.nav-ul li{
+  
+  display: inline-block;
+  padding: 10px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-ul li a{
+  overflow-x: scroll;
+
+    color: black;
+    font-size: medium;
+    padding: 5px;
+    text-decoration: none;
+
+}
+.nav-ul  {
+  background: aqua;
+  margin: 0;
+  padding: 5px;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  margin: 0px;
+  bottom: 0;
+  text-align: center;
+  background-color: aqua;
+}
+.register .product{
+  margin-left: 30%;
+}
+.log {
+  text-align: right;
+
+}
+.login {
+  margin-left: 1125px;
+}
+.appButton {
+  margin: 25px;
+  padding: 10px;
+  width: 150px;
+  background-color: aqua;
+  border: 1px solid;
+  cursor: pointer;
+}
+.logo{
+  width: 45px;
+  float: left;
+  border-radius: 50%;
+  margin: 3px;
+  margin-left: 5px;
+
+}
+
+
+.nav-right{
+  text-align: right;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,6 +65,42 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.inputBox {
+  display: block;
+  margin: 25px;
+  padding: 5px;
+  width: 300px;
+  /* border-color: aqua; */
+  border: 1px solid aqua;
+}
+
+.invalid-input{
+  color: red;
+  margin: -20px;
+  margin-left: 23px;
+  display: block;
+}
+.all-component{
+  width: 200px;
+  margin-left: 450px;
+
+}
+.product-list{
+  text-align: center;
+  margin-top: 50px;
+}
+.product-list ul li {
+  display: inline-block;
+  border: solid aqua 1px;
+  padding: 5px;
+  width: 180px;
+}
+.product-list ul{
+  margin: 0;
+  /* width: 180px; */
+}
+
+
 
 .App-header {
   background-color: #282c34;

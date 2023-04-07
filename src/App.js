@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Home from './Pages/Home';
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import FillForm from './component/FillForm';
+import ShowForm from './component/ShowForm';
+import DataProvider from './context/DataProvider';
+import Nav from './component/nav';
+import UpdateProduct from './component/edit';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <DataProvider>
+      <BrowserRouter>
+      <Nav/>
+        <Routes>
+          
+          <Route path='/' element={<Home />} />
+          <Route path='/registration' element={<FillForm />} />
+          <Route path='/showform' element={<ShowForm/>}/>
+          <Route path="/update/:id" element={<UpdateProduct/>}/>
+        </Routes>
+      </BrowserRouter>
+      </DataProvider>
+    </>
   );
 }
 
